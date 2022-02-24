@@ -1,2 +1,1 @@
-# final IT3220
-final exam of Cintro
+# IT3220 code for my exam
