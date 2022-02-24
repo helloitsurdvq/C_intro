@@ -148,17 +148,17 @@ int main(){
 				tamgiac();
 				break;				
 			case 3:
-                chuyenso();
+                		chuyenso();
 				break;				
 			case 4:	
 				bitmap();
 				break;	
-            case 5:
-                return 0; 
-                break;			
-            default: 
-                printf("Invalid choice, please try again.");
-                break;
+		    	case 5:
+				return 0; 
+				break;			
+		    	default: 
+				printf("Invalid choice, please try again.");
+				break;
 		}
 	} 
 }
