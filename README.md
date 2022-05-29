@@ -1,1 +1,1 @@
-# my works for the IT3220 exam
+# all my assignment coded in C for the IT3220 exam
