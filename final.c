@@ -12,14 +12,14 @@ typedef struct {
 
 void Read(Question thongtin[], int *n){
     do{
-      printf("\nEnter the number of question: ");
-      scanf("%d", n);
-      if(*n<=0 || *n > 100) printf("Must be > 0 and <= 100");
+      	printf("\nEnter the number of question: ");
+      	scanf("%d", n);
+      	if(*n<=0 || *n > 100) printf("Must be > 0 and <= 100");
     } while(*n<=0 || *n > 100);
     for(int i=0; i<*n; i++){
-      printf("Enter the chapter and content: ");
-      scanf("%ld%[^\n]s",&thongtin[i].chapter,thongtin[i].content);
-      thongtin[i].ID+= i+1;
+     	printf("Enter the chapter and content: ");
+      	scanf("%ld%[^\n]s",&thongtin[i].chapter,thongtin[i].content);
+      	thongtin[i].ID+= i+1;
     }
   }
 
@@ -30,8 +30,8 @@ void printlistcol(){
 void printinfo(Question thongtin[], int n){
     printlistcol();
     for(int i=0; i<n; i++){
-      printf("%-15ld %-15d %-15s\n", thongtin[i].ID, 
-      thongtin[i].chapter, thongtin[i].content);
+      	printf("%-15ld %-15d %-15s\n", thongtin[i].ID, 
+      	thongtin[i].chapter, thongtin[i].content);
     }
 }
 
@@ -52,20 +52,20 @@ void findid(Question thongtin[], int n){
 }
 
 Question addinfo(){
-	  Question thongtin;
-	  printf("Enter the chapter and content: ");
-	  scanf("%ld%[^\n]s",&thongtin.chapter, thongtin.content);
-	  thongtin.ID += 1;
+    Question thongtin;
+    printf("Enter the chapter and content: ");
+    scanf("%ld%[^\n]s",&thongtin.chapter, thongtin.content);
+    thongtin.ID += 1;
     return thongtin;
 }
 
 void printcountcol(){
-	  printf("%-15s %-15s\n","Chap", "Count");
+    printf("%-15s %-15s\n","Chap", "Count");
 }
 void count(Question thongtin[],int n){
     int dem[100]={0};
     for(int i=0; i< n; i++) dem[thongtin[i].chapter]++;
-  	printcountcol();
+    printcountcol();
     for(int i=1; i<100; i++){
         if(dem[i]) printf("%-15d %-15d\n", i, dem[i]);
     }
@@ -94,7 +94,7 @@ void check(Question thongtin[],int n){
     for(int i=0; i<n; i++){
         if(dem[i] == 0){
             printf("%-15ld %-15d %-15s\n", thongtin[i].ID, 
-					thongtin[i].chapter, thongtin[i].content);
+		thongtin[i].chapter, thongtin[i].content);
         }
     }
 }
