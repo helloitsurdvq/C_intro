@@ -120,7 +120,7 @@ int main(){
             break;				
           case 2:
             if (n>0) findid(thongtin, n);				
-            else printf("the question list is empty");
+            else printf("The question list is empty");
             break;				
           case 3:
             info = addinfo();
