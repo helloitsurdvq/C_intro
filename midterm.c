@@ -48,18 +48,18 @@ void problem2() {
   scanf("%d",&n);
   int i=1;
   while (i<=n*n){
-	  for(int j=0;j<n;j++){
-		  printf("+-----");
-	  }
-	  printf("+");
-	  printf("\n");
-	  for(int j=i;j<i+n;j++){
-		  if(j<10) printf("|    %d",j);
-		  if(j>=10) printf("|   %d",j);
-	  }
-	  printf("|");
+    for(int j=0;j<n;j++){
+  	printf("+-----");
+    }
+    printf("+");
     printf("\n");
-	  i+=n;
+    for(int j=i;j<i+n;j++){
+	if(j<10) printf("|    %d",j);
+	if(j>=10) printf("|   %d",j);
+    }
+    printf("|");
+    printf("\n");
+    i+=n;
   }
   for(int j=0;j<n;j++) printf("+-----");
   printf("+");
