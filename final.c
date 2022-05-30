@@ -44,7 +44,7 @@ void findid(Question thongtin[], int n){
             printf("Question with the Id\n");
             printlistcol();
             printf("%-15ld %-15d %-15s\n", thongtin[i].ID, 
-					thongtin[i].chapter, thongtin[i].content);
+		thongtin[i].chapter, thongtin[i].content);
             tim = 1;
         }
     }
