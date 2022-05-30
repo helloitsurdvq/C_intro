@@ -4,6 +4,7 @@
 #include<string.h>
 #include<conio.h>
 #include<stdbool.h>
+
 //ma tran don vi
 void input(int a[50][50], int *n){
     *n =0;
@@ -43,6 +44,7 @@ void matran(){
     if(donvi(a, n) == 1) printf("Yes"); // kiem tra ma tran don vi 
     else printf("No");
 }
+
 // tam giac deu
 void xuoi(int n){
     for(int i = 1; i <= n; i++){
@@ -66,6 +68,7 @@ void tamgiac(){
     else if (c == 'N') nguoc(n);
     else printf("INVALID");
 }
+
 //Chuyen so
 void chuyenso(){
     char phone[20], newphone[20];
@@ -94,13 +97,14 @@ void chuyenso(){
         }
     }
 } 
+
 //ban do bit
 void bitmap(){
     char s[101];
     int n;
-    printf("Ban do bit: ");
+    printf("Nhap ban do bit: ");
     scanf("%s", s);
-    printf("Kich Thuoc Chuong Trinh: ");
+    printf("Nhap kich Thuoc: ");
     scanf("%d", &n);
     int MinSize = 105, MinPos = -1, m = strlen(s);
     for(int i =0; i < m; ++i){
@@ -125,12 +129,11 @@ void bitmap(){
         }
     }
     printf("Vi Tri Tim Thay: %d\n", MinPos);
-    printf("Ban do bit hien tai: %s", s);
+    printf("Ban do bit hien tai la: %s", s);
 }
 
 int main(){
 	int luaChon, chon, i, n=0;
-				
 	while (1){
 		printf("\n1. Ma tran");
 		printf("\n2. Tam giac");
@@ -138,7 +141,6 @@ int main(){
 		printf("\n4. Ban do bit");
 		printf("\n5. Exit");
 		printf("\nYour choice? ");
-		
 		scanf("%d", &luaChon);
 		switch(luaChon) {
 			case 1:
