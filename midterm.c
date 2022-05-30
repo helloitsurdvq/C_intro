@@ -69,7 +69,7 @@ void problem2() {
 void problem3() {
   int n;
   printf("Input n: ");
-  scanf("%i",&n);
+  scanf("%d",&n);
   double arr[n], sum = 0, ans =0;
   printf("Input series :");
   for(int i=0 ; i<n; i++){
