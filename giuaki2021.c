@@ -17,12 +17,12 @@ void input(int a[50][50], int *n){
         }
     }
 }
-void display(int a[50][50], int n){
-    for(int i=0; i < n; i++){
-        for (int j=0; j < n; j++) printf("%4d", a[i][j]);
-        printf("\n");
-    }
-}
+// void display(int a[50][50], int n){
+//     for(int i=0; i < n; i++){
+//         for (int j=0; j < n; j++) printf("%4d", a[i][j]);
+//         printf("\n");
+//     }
+// }
 int donvi(int a[50][50], int n){
     int i, j;
     for(i=0; i<n; i++){
@@ -40,7 +40,7 @@ int donvi(int a[50][50], int n){
 void matran(){
     int a[50][50], n;
     input(a, &n);  
-    display(a, n); 
+    //display(a, n); 
     if(donvi(a, n) == 1) printf("Yes"); // kiem tra ma tran don vi 
     else printf("No");
 }
