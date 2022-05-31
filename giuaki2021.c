@@ -144,23 +144,23 @@ int main(){
 		scanf("%d", &luaChon);
 		switch(luaChon) {
 			case 1:
-				matran();
-				break;				
+			    matran();
+			    break;				
 			case 2:
-				tamgiac();
-				break;				
+			    tamgiac();
+			    break;				
 			case 3:
-                		chuyenso();
-				break;				
+                	    chuyenso();
+			    break;				
 			case 4:	
-				bitmap();
-				break;	
+			    bitmap();
+			    break;	
 		    	case 5:
-				return 0; 
-				break;			
+			    return 0; 
+			    break;			
 		    	default: 
-				printf("Invalid choice, please try again.");
-				break;
+			    printf("Invalid choice, please try again.");
+			    break;
 		}
 	} 
 }
