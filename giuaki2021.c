@@ -133,7 +133,7 @@ void bitmap(){
 }
 
 int main(){
-	int luaChon, chon, i, n=0;
+	int luaChon;
 	while (1){
 		printf("\n1. Ma tran");
 		printf("\n2. Tam giac");
