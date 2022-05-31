@@ -51,7 +51,7 @@ void findid(Question thongtin[], int n){
     if(tim == 0) printf("The question with Id %d does not exist.\n", ma);
 }
 
-Question addinfo(){
+Question addinfo(){// may update this function asap
     Question thongtin;
     printf("Enter the chapter and content: ");
     scanf("%ld%[^\n]s",&thongtin.chapter, thongtin.content);
