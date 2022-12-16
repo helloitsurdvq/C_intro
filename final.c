@@ -127,18 +127,10 @@ int main(){
             thongtin[n++] = info;
             printinfo(thongtin, n);
             break;				
-          case 4:	
-            count(thongtin, n);
-            break;
-          case 5:
-            check(thongtin, n);
-            break;	
-          case 6:
-            return 0; 
-            break;			
-          default: 
-            printf("Invalid choice, please try again.");
-            break;
+          case 4: count(thongtin, n); break;
+          case 5: check(thongtin, n); break;	
+          case 6: return 0; break;			
+          default: printf("Invalid choice, please try again."); break;
         }
     } 
 }
