@@ -186,7 +186,6 @@ void func4(){
     }
 }
 
-
 int compareMyTeam(const int i, const int a, const int b){
     if (AllPointers[i].Points[a] > AllPointers[i].Points[b]) 
         return 1;
@@ -243,27 +242,13 @@ int main(){
         scanf(" %d", &option);
 
         switch(option){
-            case 1:
-                func1();
-                break;
-            case 2:
-                func2();
-                break;
-            case 3:
-                func3();
-                break;
-            case 4:
-                func4();
-                break;
-            case 5:
-                func5();
-                break;
-            case 6:
-                return 0;
-                break;
-            default:
-                printf("INVALID INPUT\n");
-                break;
+            case 1: func1(); break;
+            case 2: func2(); break;
+            case 3: func3(); break;
+            case 4: func4(); break;
+            case 5: func5(); break;
+            case 6: return 0; break;
+            default: printf("INVALID INPUT\n"); break;
         }
     }
 }
