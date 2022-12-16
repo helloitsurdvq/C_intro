@@ -13,17 +13,11 @@ int main(int argc, char** argv) {
     return 0;
   }
   switch (atoi(argv[1])) {
-  case 1:
-    problem1(); break;
-  case 2:
-    problem2(); break;
-  case 3:
-    problem3(); break;
-  case 4:
-    problem4(); break;
-  default:
-    printf("Invalid parameters!\n");
-    break;
+  case 1: problem1(); break;
+  case 2: problem2(); break;
+  case 3: problem3(); break;
+  case 4: problem4(); break;
+  default: printf("Invalid parameters!\n"); break;
   }
 }
 
