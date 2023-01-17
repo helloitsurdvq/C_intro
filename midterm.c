@@ -8,6 +8,7 @@ void problem3();
 void problem4();
 
 int main(int argc, char** argv) {
+  printf("Hello world ");
   if (argc != 2) {
     printf("Invalid parameters!\n");
     return 0;
