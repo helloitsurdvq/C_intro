@@ -65,7 +65,7 @@ void problem3() {
   int n;
   printf("Input n: ");
   scanf("%d",&n);
-  double arr[n], sum = 0, ans =0;
+  double arr[1000], sum = 0, ans =0;
   printf("Input series :");
   for(int i=0 ; i<n; i++){
     scanf("%lf",&arr[i]);
